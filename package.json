@@ -1,0 +1,12 @@
+{
+  "name": "coming-soon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build-css": "tailwindcss build ./css/src.css -o ./css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
