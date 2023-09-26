@@ -1,0 +1,3 @@
+[build]
+  publish = "."  # The directory containing your built site
+  command = "npm run start"  # The command to start your server

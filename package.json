@@ -5,12 +5,15 @@
   "main": "tailwind.config.js",
   "scripts": {
     "build-css": "tailwindcss build ./css/src.css -o ./css/styles.css",
-    "start": "lite-server"
+    "start": "http-server -p 8080"
   },
   "keywords": [],
   "author": "Your Name",
   "license": "ISC",
   "dependencies": {
-    "lite-server": "^2.6.1"  
+    "lite-server": "^2.6.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
