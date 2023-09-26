@@ -1,12 +1,16 @@
 {
   "name": "coming-soon",
   "version": "1.0.0",
-  "description": "",
+  "description": "Your description here",
   "main": "tailwind.config.js",
   "scripts": {
-    "build-css": "tailwindcss build ./css/src.css -o ./css/styles.css"
+    "build-css": "tailwindcss build ./css/src.css -o ./css/styles.css",
+    "start": "lite-server"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"  
+  }
 }
