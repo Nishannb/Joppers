@@ -1,0 +1,38 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            step {
+                // Git checkout 
+                sh 'echo checkout passed' 
+            }
+        }
+        stage('Build') {
+            step {
+                // Project Build 
+                sh 'echo build passed'  
+            }
+        }
+        stage('deploy') {
+            step {
+                // Project Deploy 
+                sh 'echo deploy passed'  
+            }
+        }
+    }
+    post {
+        always {
+            echo 'This will always run'
+            // Add additional steps for 'always' condition
+        }
+        success {
+            echo 'This will run only if the pipeline is successful'
+            // Add additional steps for 'success' condition
+        }
+        failure {
+            echo 'This will run only if the pipeline fails'
+            // Add additional steps for 'failure' condition
+        }
+    }
+}
